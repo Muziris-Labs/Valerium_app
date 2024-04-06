@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+
+
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({Key? key}) : super(key: key);
 
@@ -86,7 +88,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   children: [
                      SizedBox(height: 10),
                     Text(
-                      'MultiChain Crypto \n Wallet',
+                      'MultiChain Crypto \nWallet',
                       style: GoogleFonts.notoSans(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
@@ -97,7 +99,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     Text(
                       'Lorem ipsum dolor sit amet consectetur. Aliquet mattis vulputate pulvinar diam. Aliquam in mus mauris netus rhoncus id',
                       style: GoogleFonts.notoSans(
-                        color: Colors.white,
+                        color: const Color.fromARGB(223, 255, 255, 255),
                         fontSize: 14,
                       ),
                     ),
