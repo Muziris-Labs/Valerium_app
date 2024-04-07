@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:valerium_wallet/onboarding.dart';
+import 'package:valerium_wallet/pages/onboarding.dart';
 
 
 void main() {
@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
      debugShowCheckedModeBanner: false, 
+     
       home: OnboardingPage(),
     );
   }

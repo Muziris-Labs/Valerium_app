@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:valerium_wallet/pages/Signup.dart';
 
 
 
@@ -32,12 +34,14 @@ class _OnboardingPageState extends State<OnboardingPage> {
             ),
           ),
           Positioned(
-            top: 0.17,
-            left: screenWidth / 2 - 75, 
-            child: Image.asset(
-              'lib/images/Logo.png', 
-              width: 120, 
-              height: 150, 
+            top: 0.20,
+            left: screenWidth / 2 - 65, 
+            child: Center(
+              child: Image.asset(
+                'lib/images/Logo.png', 
+                width: 120, 
+                height: 150, 
+              ),
             ),
           ),
           Positioned(
@@ -104,21 +108,22 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       ),
                     ),
                     SizedBox(height: 40),
-                    Container(
-                      width: 290,
-                      height: 53,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(7),
-                        gradient: LinearGradient(
-                          begin: Alignment(1.00, -0.09),
-                          end: Alignment(-1, 0.09),
-                          colors: [Color(0xFFEA13F2), Color(0xFFE6213A)],
+                    GestureDetector(
+                      onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => SignupPage()));
+                          },
+
+                      child: Container(
+                        width: 290,
+                        height: 53,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(7),
+                          gradient: LinearGradient(
+                            begin: Alignment(1.00, -0.09),
+                            end: Alignment(-1, 0.09),
+                            colors: [Color(0xFFEA13F2), Color(0xFFE6213A)],
+                          ),
                         ),
-                      ),
-                      child: InkWell(
-                        onTap: () {
-                          
-                        },
                         child: Padding(
                           padding: const EdgeInsets.all(16.0),
                           child: Center(
