@@ -37,7 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   grid_paper: ^0.0.2
   design_grid: ^1.1.0
-  google_fonts: ^6.2.1
+  google_fonts: ^6.0.0
+  flutter_otp_text_field: ^1.1.1
   
 
 dev_dependencies:
