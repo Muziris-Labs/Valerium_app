@@ -39,6 +39,7 @@ dependencies:
   design_grid: ^1.1.0
   google_fonts: 6.0.0
   gradient_borders: ^1.0.0
+  flutter_otp_text_field: ^1.1.1
   
 
 dev_dependencies:

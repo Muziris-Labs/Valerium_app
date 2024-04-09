@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:valerium_wallet/acc_created.dart';
 import 'package:valerium_wallet/pages/onboarding.dart';
 
 
@@ -11,7 +12,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
