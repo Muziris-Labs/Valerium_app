@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:valerium_wallet/login.dart';
+import 'package:valerium_wallet/pages/login.dart';
 
 class CreatePinPage extends StatefulWidget {
   const CreatePinPage({Key? key});

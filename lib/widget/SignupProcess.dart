@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:valerium_wallet/pages/acc_created.dart';
 import 'package:valerium_wallet/widget/AlternativeGradbtn.dart';
 import 'package:valerium_wallet/widget/Gradientbutton.dart';
 import 'package:valerium_wallet/widget/TextToSignin.dart';
@@ -274,7 +275,9 @@ class _MyWidgetState extends State<SignupProcess> {
                             SizedBox(width: 10,),
                             GradButton(
                               text: "Verify",
-                              ontap: (){},
+                              ontap: (){
+                                Navigator.push(context, MaterialPageRoute(builder: (context)=> AccountCreate()));
+                              },
                             
                             ),
                           ],

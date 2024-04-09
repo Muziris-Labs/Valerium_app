@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:valerium_wallet/acc_created.dart';
+import 'package:valerium_wallet/pages/acc_created.dart';
 import 'package:valerium_wallet/pages/onboarding.dart';
 
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:valerium_wallet/createpin.dart';
+import 'package:valerium_wallet/pages/createpin.dart';
 
 
 class AccountCreate extends StatefulWidget {
