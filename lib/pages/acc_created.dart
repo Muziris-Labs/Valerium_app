@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:valerium_wallet/pages/createpin.dart';
-
+import 'package:valerium_wallet/pages/homepage.dart'; // Import the homepage file
 
 class AccountCreate extends StatefulWidget {
   const AccountCreate({Key? key});
@@ -66,7 +66,6 @@ class _AccountCreateState extends State<AccountCreate> {
                 color: Colors.transparent,
                 child: InkWell(
                   onTap: () {
-                
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => CreatePinPage()),
@@ -113,7 +112,11 @@ class _AccountCreateState extends State<AccountCreate> {
                   color: Colors.transparent,
                   child: InkWell(
                     onTap: () {
-                      
+                      // Navigate to the homepage
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomePage()),
+                      );
                     },
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
